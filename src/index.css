@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* HackGenesis F1-Inspired Design System
+/* HackQubit F1-Inspired Design System
 All colors MUST be HSL. Formula 1 racing theme with speed, precision, and technology.
 */
 
@@ -53,15 +53,36 @@ All colors MUST be HSL. Formula 1 racing theme with speed, precision, and techno
     --neon-yellow: 60 100% 50%;
 
     /* Speed gradients */
-    --gradient-speed: linear-gradient(135deg, hsl(0 84% 55%) 0%, hsl(0 84% 45%) 50%, hsl(0 0% 3%) 100%);
-    --gradient-chrome: linear-gradient(135deg, hsl(210 8% 85%) 0%, hsl(210 8% 55%) 50%, hsl(210 8% 25%) 100%);
-    --gradient-electric: linear-gradient(135deg, hsl(200 100% 50%) 0%, hsl(240 100% 60%) 100%);
-    --gradient-carbon: linear-gradient(135deg, hsl(210 8% 15%) 0%, hsl(210 8% 8%) 50%, hsl(0 0% 3%) 100%);
+    --gradient-speed: linear-gradient(
+      135deg,
+      hsl(0 84% 55%) 0%,
+      hsl(0 84% 45%) 50%,
+      hsl(0 0% 3%) 100%
+    );
+    --gradient-chrome: linear-gradient(
+      135deg,
+      hsl(210 8% 85%) 0%,
+      hsl(210 8% 55%) 50%,
+      hsl(210 8% 25%) 100%
+    );
+    --gradient-electric: linear-gradient(
+      135deg,
+      hsl(200 100% 50%) 0%,
+      hsl(240 100% 60%) 100%
+    );
+    --gradient-carbon: linear-gradient(
+      135deg,
+      hsl(210 8% 15%) 0%,
+      hsl(210 8% 8%) 50%,
+      hsl(0 0% 3%) 100%
+    );
 
     /* Glow effects */
     --glow-red: 0 0 20px hsl(0 84% 55% / 0.3), 0 0 40px hsl(0 84% 55% / 0.2);
-    --glow-blue: 0 0 20px hsl(200 100% 50% / 0.3), 0 0 40px hsl(200 100% 50% / 0.2);
-    --glow-chrome: 0 0 20px hsl(210 8% 75% / 0.3), 0 0 40px hsl(210 8% 75% / 0.2);
+    --glow-blue: 0 0 20px hsl(200 100% 50% / 0.3),
+      0 0 40px hsl(200 100% 50% / 0.2);
+    --glow-chrome: 0 0 20px hsl(210 8% 75% / 0.3),
+      0 0 40px hsl(210 8% 75% / 0.2);
 
     --sidebar-background: 0 0% 5%;
     --sidebar-foreground: 0 0% 90%;
@@ -98,11 +119,11 @@ All colors MUST be HSL. Formula 1 racing theme with speed, precision, and techno
 
   /* F1 Racing Typography */
   .font-orbitron {
-    font-family: 'Orbitron', monospace;
+    font-family: "Orbitron", monospace;
   }
 
   .font-rajdhani {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: "Rajdhani", sans-serif;
   }
 
   /* Custom scrollbar */
@@ -184,19 +205,28 @@ All colors MUST be HSL. Formula 1 racing theme with speed, precision, and techno
   }
 
   .speed-lines::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, hsl(0 84% 55% / 0.3), transparent);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      hsl(0 84% 55% / 0.3),
+      transparent
+    );
     animation: speed-sweep 2s infinite;
   }
 
   @keyframes speed-sweep {
-    0% { left: -100%; }
-    100% { left: 100%; }
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
   }
 
   /* Pulse Animation for Racing Elements */
@@ -205,11 +235,12 @@ All colors MUST be HSL. Formula 1 racing theme with speed, precision, and techno
   }
 
   @keyframes pulse-racing {
-    0%, 100% { 
+    0%,
+    100% {
       transform: scale(1);
       box-shadow: 0 0 0 0 hsl(0 84% 55% / 0.7);
     }
-    50% { 
+    50% {
       transform: scale(1.05);
       box-shadow: 0 0 0 10px hsl(0 84% 55% / 0);
     }
@@ -223,7 +254,7 @@ All colors MUST be HSL. Formula 1 racing theme with speed, precision, and techno
   }
 
   .racing-border::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -2px;
     left: -2px;
@@ -236,8 +267,11 @@ All colors MUST be HSL. Formula 1 racing theme with speed, precision, and techno
 
   /* Carbon Fiber Texture */
   .carbon-texture {
-    background-image: 
-      radial-gradient(circle at 25% 25%, hsl(210 8% 20%) 1px, transparent 1px),
+    background-image: radial-gradient(
+        circle at 25% 25%,
+        hsl(210 8% 20%) 1px,
+        transparent 1px
+      ),
       radial-gradient(circle at 75% 75%, hsl(210 8% 15%) 1px, transparent 1px);
     background-size: 4px 4px;
     background-position: 0 0, 2px 2px;

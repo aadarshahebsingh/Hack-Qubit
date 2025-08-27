@@ -52,7 +52,7 @@
 //                 transition={{ duration: 0.8, delay: 0.6 }}
 //                 className="text-lg text-white font-rajdhani leading-relaxed mb-6"
 //               >
-//                 Welcome to the ultimate fusion of speed and innovation. HackGenesis is not just another hackathon—it's where coding meets the precision and intensity of Formula 1 racing.
+//                 Welcome to the ultimate fusion of speed and innovation. HackQubit is not just another hackathon—it's where coding meets the precision and intensity of Formula 1 racing.
 //               </motion.p>
 
 //               <motion.p
@@ -214,7 +214,7 @@
 //                 className="text-lg text-white font-rajdhani leading-relaxed mb-6 "
 //                  style={glowTextShadow}
 //               >
-//                 Welcome to the ultimate fusion of speed and innovation. HackGenesis is not just another hackathon—it's where coding meets the precision and intensity of Formula 1 racing.
+//                 Welcome to the ultimate fusion of speed and innovation. HackQubit is not just another hackathon—it's where coding meets the precision and intensity of Formula 1 racing.
 //               </motion.p>
 
 //               <motion.p
@@ -357,7 +357,7 @@
 //           animate={isInView ? { opacity: 1, y: 0 } : {}}
 //           transition={{ duration: 0.8, delay: 0.2 }}
 //         >
-//           HackGenesis is where coding meets Formula 1 precision. We’re not just hosting a hackathon—we’re launching a high-speed innovation challenge that fuels creativity and competition.
+//           HackQubit is where coding meets Formula 1 precision. We’re not just hosting a hackathon—we’re launching a high-speed innovation challenge that fuels creativity and competition.
 //         </motion.p>
 
 //         <motion.p
@@ -414,17 +414,16 @@ const About = () => {
       className="relative py-20 px-6 md:px-12 overflow-hidden bg-transparent"
     >
       <div
-    className="absolute inset-0 flex items-center justify-center pointer-events-none z-0"
-    aria-hidden="true"
-  >
-    <img
-      src="/Event_Section/f1flagcar.png"
-      alt="background"
-      className="w-1/2 max-w-2xl opacity-10 object-contain"
-    />
-  </div>
+        className="absolute inset-0 flex items-center justify-center pointer-events-none z-0"
+        aria-hidden="true"
+      >
+        <img
+          src="/Event_Section/f1flagcar.png"
+          alt="background"
+          className="w-1/2 max-w-2xl opacity-10 object-contain"
+        />
+      </div>
       <div className="relative text-center mb-6 flex flex-col items-center justify-center">
-
         <h1
           className="hidden lg:flex text-9xl font-orbitron font-black opacity-30 pointer-events-none select-none uppercase tracking-wider absolute inset-0 items-center justify-center"
           style={{ transform: "translateY(-32px)" }}
@@ -466,8 +465,8 @@ const About = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            HackGenesis is where coding meets Formula 1 precision. We’re not
-            just hosting a hackathon—we’re launching a high-speed innovation
+            HackQubit is where coding meets Formula 1 precision. We’re not just
+            hosting a hackathon—we’re launching a high-speed innovation
             challenge that fuels creativity and competition.
           </motion.p>
 

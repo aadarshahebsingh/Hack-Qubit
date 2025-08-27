@@ -9,64 +9,65 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "What is HackGenesis?",
+      question: "What is HackQubit?",
       answer:
-        "24 hours. One hackathon. Code with purpose, create with passion, and conquer real-world challenges — that’s HackGenesis."
+        "24 hours. One hackathon. Code with purpose, create with passion, and conquer real-world challenges — that’s HackQubit.",
     },
     {
-      question: "Who can participate in HackGenesis?",
-      answer: "Any engineering undergraduate student is eligible to participate."
+      question: "Who can participate in HackQubit?",
+      answer:
+        "Any engineering undergraduate student is eligible to participate.",
     },
     {
       question: "Do I need to have a team before registering?",
       answer:
-        "Teams can consist of 1 to 4 members, and you're welcome to register either solo or with a team."
+        "Teams can consist of 1 to 4 members, and you're welcome to register either solo or with a team.",
     },
     {
       question: "What should I bring to the hackathon?",
       answer:
-        "Bring your laptop, chargers, any hardware you plan to use, and your enthusiasm!"
+        "Bring your laptop, chargers, any hardware you plan to use, and your enthusiasm!",
     },
     {
       question: "Are there any costs to participate?",
       answer:
-        "HackGenesis has a nominal registration fee of ₹600 per team. This covers meals, snacks, workspace, mentorship, and exciting prizes."
+        "HackQubit has a nominal registration fee of ₹600 per team. This covers meals, snacks, workspace, mentorship, and exciting prizes.",
     },
     {
       question: "What are the judging criteria?",
       answer:
-        "Projects will be evaluated based on Innovation & Creativity (30%), Technical Implementation (25%), User Experience & Design (20%), Business Viability (15%), and Presentation Quality (10%)."
+        "Projects will be evaluated based on Innovation & Creativity (30%), Technical Implementation (25%), User Experience & Design (20%), Business Viability (15%), and Presentation Quality (10%).",
     },
     {
       question: "Can I work on a pre-existing project?",
       answer:
-        "No, all projects must be started from scratch during the hackathon. However, you can use existing APIs, frameworks, and open-source libraries."
+        "No, all projects must be started from scratch during the hackathon. However, you can use existing APIs, frameworks, and open-source libraries.",
     },
     {
       question: "What technologies can I use?",
       answer:
-        "You're free to use any programming languages, frameworks, APIs, and tools you're comfortable with."
+        "You're free to use any programming languages, frameworks, APIs, and tools you're comfortable with.",
     },
     {
       question: "Can I attend the hackathon remotely?",
       answer:
-        "No, the hackathon is an offline event and will be conducted at RVS College of Engineering and Technology."
+        "No, the hackathon is an offline event and will be conducted at RVS College of Engineering and Technology.",
     },
     {
       question: "What happens if I can't stay for the full 24 hours?",
       answer:
-        "We encourage you to stay for the full 24 hours — it's mandatory, except in case of a medical emergency or any other situation with proper valid reasons."
+        "We encourage you to stay for the full 24 hours — it's mandatory, except in case of a medical emergency or any other situation with proper valid reasons.",
     },
     {
       question: "Whom can I contact for additional queries?",
       answer:
-        'If you have any further queries, feel free to <a href="mailto:hackgenesisrvscet@gmail.com" class="text-primary underline">email us</a>. You can also reach out to our student coordinators through the provided phone numbers.'
+        'If you have any further queries, feel free to <a href="mailto:hackQubitrvscet@gmail.com" class="text-primary underline">email us</a>. You can also reach out to our student coordinators through the provided phone numbers.',
     },
     {
       question: "What prizes can I win?",
       answer:
-        "With a total prize pool of over ₹30,000 and exciting goodies worth thousands, the top teams will be rewarded: ₹15,000 for first place, ₹10,000 for second, and ₹5,000 for third."
-    }
+        "With a total prize pool of over ₹30,000 and exciting goodies worth thousands, the top teams will be rewarded: ₹15,000 for first place, ₹10,000 for second, and ₹5,000 for third.",
+    },
   ];
 
   const toggleFAQ = (index: number) => {
@@ -95,7 +96,7 @@ const FAQ = () => {
             transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
             style={{
               offsetPath:
-                "path('M100,400 Q300,100 600,400 Q900,700 1100,400 Q900,100 600,400 Q300,700 100,400')"
+                "path('M100,400 Q300,100 600,400 Q900,700 1100,400 Q900,100 600,400 Q300,700 100,400')",
             }}
           />
         </svg>
@@ -121,9 +122,10 @@ const FAQ = () => {
               >
                 <span
                   style={{
-                    background: "linear-gradient(to bottom, #f50e0eff, #1a1a1a)",
+                    background:
+                      "linear-gradient(to bottom, #f50e0eff, #1a1a1a)",
                     WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent"
+                    WebkitTextFillColor: "transparent",
                   }}
                 >
                   FAQ's
@@ -132,9 +134,10 @@ const FAQ = () => {
               <h2 className="text-4xl sm:text-6xl font-orbitron font-extrabold uppercase tracking-wide text-white relative z-10">
                 <span
                   style={{
-                    background: "linear-gradient(to bottom, #f50e0eff, #1a1a1a)",
+                    background:
+                      "linear-gradient(to bottom, #f50e0eff, #1a1a1a)",
                     WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent"
+                    WebkitTextFillColor: "transparent",
                   }}
                 >
                   FAQ's
@@ -161,7 +164,9 @@ const FAQ = () => {
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                animate={
+                  isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }
+                }
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="border border-primary/30 rounded-xl overflow-hidden"
               >
@@ -191,7 +196,10 @@ const FAQ = () => {
 
                 <motion.div
                   initial={false}
-                  animate={{ height: isOpen ? "auto" : 0, opacity: isOpen ? 1 : 0 }}
+                  animate={{
+                    height: isOpen ? "auto" : 0,
+                    opacity: isOpen ? 1 : 0,
+                  }}
                   transition={{ duration: 0.3, ease: "easeInOut" }}
                   className="overflow-hidden"
                 >

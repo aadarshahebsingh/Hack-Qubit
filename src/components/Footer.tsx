@@ -4,7 +4,7 @@ import { Github, Mail, Twitter, Instagram, Linkedin } from "lucide-react";
 const Footer = () => {
   const socialLinks = [
     { icon: Github, href: "#", label: "GitHub" },
-    { icon: Mail, href: "hackgenesis.rvscet@gmail.com", label: "Email" },
+    { icon: Mail, href: "hackQubit.rvscet@gmail.com", label: "Email" },
     // { icon: Twitter, href: '#', label: 'Twitter' },
     {
       icon: Instagram,
@@ -51,7 +51,7 @@ const Footer = () => {
 
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
-          {/* HackGenesis Branding */}
+          {/* HackQubit Branding */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -60,28 +60,27 @@ const Footer = () => {
             className="space-y-6"
           >
             <div className="flex items-center space-x-3">
-  {/* Logo 1 */}
-  <img
-    src="/Navigation_Bar/HQ-LOGO.png"
-    alt="Logo 1"
-    className="w-10 h-10 object-contain rounded"
-  />
+              {/* Logo 1 */}
+              <img
+                src="/Navigation_Bar/HQ-LOGO.png"
+                alt="Logo 1"
+                className="w-10 h-10 object-contain rounded"
+              />
 
-  {/* Logo 2 */}
-  <img
-    src="/Navigation_Bar/helix_redlogo.png"
-    alt="Logo 2"
-    className="w-10 h-10 object-contain rounded"
-  />
+              {/* Logo 2 */}
+              <img
+                src="/Navigation_Bar/helix_redlogo.png"
+                alt="Logo 2"
+                className="w-10 h-10 object-contain rounded"
+              />
 
-  {/* Logo 3 */}
-  <img
-    src="/Navigation_Bar/rvslogo.png"
-    alt="Logo 3"
-    className="w-10 h-10 object-contain rounded"
-  />
-</div>
-
+              {/* Logo 3 */}
+              <img
+                src="/Navigation_Bar/rvslogo.png"
+                alt="Logo 3"
+                className="w-10 h-10 object-contain rounded"
+              />
+            </div>
 
             <p className="text-muted-foreground font-rajdhani leading-relaxed text-base font-bold">
               Where coding meets the precision and intensity of Formula 1
@@ -211,7 +210,7 @@ const Footer = () => {
         >
           <div className="flex items-center space-x-8">
             <p className="text-muted-foreground text-base font-bold font-rajdhani">
-              © 2025 HackGenesis. All rights reserved.
+              © 2025 HackQubit. All rights reserved.
             </p>
             <div className="flex space-x-6 text-xs text-muted-foreground font-rajdhani">
               <a

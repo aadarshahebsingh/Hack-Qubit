@@ -1,9 +1,5 @@
 import { useRef } from "react";
-import {
-  motion,
-  useScroll,
-  useTransform,
-} from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import SpeedParticles from "./SpeedParticles";
 import { Button } from "./ui/button";
 
@@ -52,17 +48,16 @@ const Hero = () => {
             className="absolute w-3/4 h-3/4 max-w-none object-contain opacity-90 z-20"
           />
           <motion.img
-  src="/HomePage/driver2.png"
-  alt="Driver"
-  className="absolute w-1/3 h-1/3 max-w-none object-contain z-40"
-  animate={{ y: [-90, -70, -90] }} // move up and down
-  transition={{
-    duration: 2,
-    repeat: Infinity,
-    ease: "easeInOut",
-  }}
-/>
-
+            src="/HomePage/driver2.png"
+            alt="Driver"
+            className="absolute w-1/3 h-1/3 max-w-none object-contain z-40"
+            animate={{ y: [-90, -70, -90] }} // move up and down
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
 
           {/* Buttons on top of the car */}
           <div className="absolute top-[65%] z-30 flex flex-col gap-4 items-center">
@@ -74,20 +69,19 @@ const Hero = () => {
               REGISTER NOW
             </Button>
             <Button
-  variant="neon"
-  size="xl"
-  className="min-w-48 relative overflow-hidden font-bold text-lg text-white border-2 border-red-500 shadow-[0_0_10px_red] hover:scale-105 transition-transform"
->
-  {/* Checkered background */}
-  <span className="absolute inset-0 bg-[linear-gradient(45deg,#fff_25%,#000_25%,#000_50%,#fff_50%,#fff_75%,#000_75%,#000_100%)] bg-[length:20px_20px] opacity-60" />
+              variant="neon"
+              size="xl"
+              className="min-w-48 relative overflow-hidden font-bold text-lg text-white border-2 border-red-500 shadow-[0_0_10px_red] hover:scale-105 transition-transform"
+            >
+              {/* Checkered background */}
+              <span className="absolute inset-0 bg-[linear-gradient(45deg,#fff_25%,#000_25%,#000_50%,#fff_50%,#fff_75%,#000_75%,#000_100%)] bg-[length:20px_20px] opacity-60" />
 
-  {/* Overlay for better text contrast */}
-  <span className="absolute inset-0 bg-black/30" />
+              {/* Overlay for better text contrast */}
+              <span className="absolute inset-0 bg-black/30" />
 
-  {/* Button text */}
-  <span className="relative z-10">LEARN MORE</span>
-</Button>
-
+              {/* Button text */}
+              <span className="relative z-10">LEARN MORE</span>
+            </Button>
           </div>
         </div>
 
@@ -114,7 +108,6 @@ const Hero = () => {
 };
 
 export default Hero;
-
 
 // import { motion, useScroll, useTransform } from "framer-motion";
 // import { useRef } from "react";
@@ -172,7 +165,7 @@ export default Hero;
 //             HACK
 //           </span>
 //           <span className="ml-2 text-transparent bg-clip-text bg-gradient-to-r from-[#0ff] to-[#09f]">
-//             GENESIS
+//             Qubit
 //           </span>
 //         </motion.h1>
 
@@ -289,7 +282,7 @@ export default Hero;
 //                 HACK
 //               </span>
 //               <span className="ml-2 text-transparent bg-clip-text bg-gradient-to-r from-[#0ff] to-[#09f]">
-//                 GENESIS
+//                 Qubit
 //               </span>
 //             </h1>
 //             <p className="mt-4 text-xl md:text-2xl font-rajdhani font-medium text-muted-foreground tracking-widest">

@@ -8,7 +8,7 @@ export const SponsorsSection = () => {
     {
       tier: "Diamond Sponsor",
       features: [
-        "Exclusive brand logo prominently displayed with HackGenesis every time.",
+        "Exclusive brand logo prominently displayed with HackQubit every time.",
         "Print ads with title on banner and posters.",
         "Deliver a keynote address during the opening and closing ceremony",
       ],
