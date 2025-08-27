@@ -1,0 +1,245 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* HackGenesis F1-Inspired Design System
+All colors MUST be HSL. Formula 1 racing theme with speed, precision, and technology.
+*/
+
+@layer base {
+  :root {
+    /* F1 Racing Color Palette */
+    --background: 0 0% 3%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Racing Red - Primary accent for speed and excitement */
+    --primary: 0 84% 55%;
+    --primary-foreground: 0 0% 98%;
+
+    /* Carbon Grey - Secondary accent for sophistication */
+    --secondary: 210 8% 15%;
+    --secondary-foreground: 0 0% 90%;
+
+    /* Muted carbon tones */
+    --muted: 210 8% 12%;
+    --muted-foreground: 215 15% 65%;
+
+    /* Electric Blue - Tech accent */
+    --accent: 200 100% 50%;
+    --accent-foreground: 0 0% 5%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 8% 18%;
+    --input: 210 8% 12%;
+    --ring: 0 84% 55%;
+
+    --radius: 0.75rem;
+
+    /* Chrome/Silver accents */
+    --chrome: 210 8% 75%;
+    --chrome-dark: 210 8% 45%;
+
+    /* Neon accents */
+    --neon-blue: 200 100% 50%;
+    --neon-green: 120 100% 40%;
+    --neon-yellow: 60 100% 50%;
+
+    /* Speed gradients */
+    --gradient-speed: linear-gradient(135deg, hsl(0 84% 55%) 0%, hsl(0 84% 45%) 50%, hsl(0 0% 3%) 100%);
+    --gradient-chrome: linear-gradient(135deg, hsl(210 8% 85%) 0%, hsl(210 8% 55%) 50%, hsl(210 8% 25%) 100%);
+    --gradient-electric: linear-gradient(135deg, hsl(200 100% 50%) 0%, hsl(240 100% 60%) 100%);
+    --gradient-carbon: linear-gradient(135deg, hsl(210 8% 15%) 0%, hsl(210 8% 8%) 50%, hsl(0 0% 3%) 100%);
+
+    /* Glow effects */
+    --glow-red: 0 0 20px hsl(0 84% 55% / 0.3), 0 0 40px hsl(0 84% 55% / 0.2);
+    --glow-blue: 0 0 20px hsl(200 100% 50% / 0.3), 0 0 40px hsl(200 100% 50% / 0.2);
+    --glow-chrome: 0 0 20px hsl(210 8% 75% / 0.3), 0 0 40px hsl(210 8% 75% / 0.2);
+
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 0 84% 55%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 210 8% 12%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 210 8% 18%;
+    --sidebar-ring: 0 84% 55%;
+  }
+
+  /* Dark mode is the default for F1 theme */
+  .light {
+    --background: 0 0% 95%;
+    --foreground: 0 0% 10%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 15%;
+    --muted: 210 8% 88%;
+    --muted-foreground: 215 15% 35%;
+    --border: 210 8% 82%;
+    --input: 210 8% 88%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-rajdhani overflow-x-hidden;
+    scroll-behavior: smooth;
+  }
+
+  /* F1 Racing Typography */
+  .font-orbitron {
+    font-family: 'Orbitron', monospace;
+  }
+
+  .font-rajdhani {
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary rounded-full;
+    background: var(--gradient-speed);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    box-shadow: var(--glow-red);
+  }
+}
+
+@layer utilities {
+  /* F1 Gradient Utilities */
+  .bg-gradient-speed {
+    background: var(--gradient-speed);
+  }
+
+  .bg-gradient-chrome {
+    background: var(--gradient-chrome);
+  }
+
+  .bg-gradient-electric {
+    background: var(--gradient-electric);
+  }
+
+  .bg-gradient-carbon {
+    background: var(--gradient-carbon);
+  }
+
+  /* Glow Effects */
+  .glow-red {
+    box-shadow: var(--glow-red);
+  }
+
+  .glow-blue {
+    box-shadow: var(--glow-blue);
+  }
+
+  .glow-chrome {
+    box-shadow: var(--glow-chrome);
+  }
+
+  /* Racing Text Effects */
+  .text-gradient-speed {
+    background: var(--gradient-speed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-chrome {
+    background: var(--gradient-chrome);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-electric {
+    background: var(--gradient-electric);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Speed Lines Animation */
+  .speed-lines {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .speed-lines::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, hsl(0 84% 55% / 0.3), transparent);
+    animation: speed-sweep 2s infinite;
+  }
+
+  @keyframes speed-sweep {
+    0% { left: -100%; }
+    100% { left: 100%; }
+  }
+
+  /* Pulse Animation for Racing Elements */
+  .pulse-racing {
+    animation: pulse-racing 1.5s ease-in-out infinite;
+  }
+
+  @keyframes pulse-racing {
+    0%, 100% { 
+      transform: scale(1);
+      box-shadow: 0 0 0 0 hsl(0 84% 55% / 0.7);
+    }
+    50% { 
+      transform: scale(1.05);
+      box-shadow: 0 0 0 10px hsl(0 84% 55% / 0);
+    }
+  }
+
+  /* Racing UI Elements */
+  .racing-border {
+    border: 2px solid;
+    border-image: var(--gradient-speed) 1;
+    position: relative;
+  }
+
+  .racing-border::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: var(--gradient-speed);
+    z-index: -1;
+    border-radius: inherit;
+  }
+
+  /* Carbon Fiber Texture */
+  .carbon-texture {
+    background-image: 
+      radial-gradient(circle at 25% 25%, hsl(210 8% 20%) 1px, transparent 1px),
+      radial-gradient(circle at 75% 75%, hsl(210 8% 15%) 1px, transparent 1px);
+    background-size: 4px 4px;
+    background-position: 0 0, 2px 2px;
+  }
+}
