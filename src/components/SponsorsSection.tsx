@@ -3,16 +3,17 @@ import { Building, Handshake, Star, Zap } from "lucide-react";
 import { Users, Eye, Megaphone } from "lucide-react";
 import { motion } from "framer-motion";
 
+
 export const SponsorsSection = () => {
   const sponsorTiers = [
     {
-      tier: "Diamond Sponsor",
+      tier: "Title Sponsors",
       features: [
-        "Exclusive brand logo prominently displayed with HackQubit every time.",
+        "Exclusive brand logo prominently displayed with HackGenesis every time.",
         "Print ads with title on banner and posters.",
         "Deliver a keynote address during the opening and closing ceremony",
       ],
-      investment: "From ₹30,000+",
+      investment: "From ₹70,000+",
       glowColor: "rgba(185, 242, 255, 0.7)",
       borderColor: "rgba(100, 200, 255, 0.8)",
       accentColor: "text-cyan-300",
@@ -51,7 +52,7 @@ export const SponsorsSection = () => {
       <div className="absolute inset-0 overflow-hidden opacity-20">
         {[...Array(10)].map((_, i) => (
           <motion.div
-            key={i}
+            key={i}    
             className="absolute rounded-full blur-xl"
             style={{
               width: `${Math.random() * 200 + 50}px`,

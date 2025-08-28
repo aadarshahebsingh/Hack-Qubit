@@ -76,9 +76,9 @@ const Footer = () => {
 
               {/* Logo 3 */}
               <img
-                src="/Navigation_Bar/rvslogo.png"
+                src="/Navigation_Bar/rvsLogoHackQubit.png"
                 alt="Logo 3"
-                className="w-10 h-10 object-contain rounded"
+                className="w-10 h-25 object-contain rounded"
               />
             </div>
 
@@ -126,7 +126,7 @@ const Footer = () => {
                   Date & Time
                 </h5>
                 <p className="text-muted-foreground text-base font-bold">
-                  September 7-8, 2025 • 24 Hours
+                  October 7-8, 2025 • 24 Hours
                 </p>
               </div>
 

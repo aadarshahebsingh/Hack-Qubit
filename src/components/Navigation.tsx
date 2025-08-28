@@ -226,9 +226,9 @@ const Navigation = () => {
             {/* Mobile Toggle */}
             <div className="flex items-center space-x-4">
               <img
-                src="/Navigation_Bar/rvslogo.png"
+                src="/Navigation_Bar/rvsLogoHackQubit.png"
                 alt="Logo 3"
-                className="h-10 w-auto"
+                className="h-20 w-auto"
               />
               <motion.button
                 whileTap={{ scale: 0.95 }}

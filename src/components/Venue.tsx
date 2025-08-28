@@ -143,9 +143,8 @@ const Venue = () => {
                       Date
                     </h3>
                     <p className="ttext-base font-semibold text-gray-400">
-                      September 7-8, 2025
+                      October 7-8, 2025
                     </p>
-                    
                   </div>
                 </motion.div>
 

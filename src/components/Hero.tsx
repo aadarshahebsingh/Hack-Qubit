@@ -36,10 +36,11 @@ const Hero = () => {
         <div className="w-screen h-screen relative z-50 flex items-center justify-center overflow-hidden">
           {/* Back image */}
           <img
-            src="/HomePage/HQ-GLOW-RED.png"
-            alt="Background"
-            className="absolute w-3/4 h-3/4 object-contain mix-blend-screen opacity-90 z-30 translate-y-[-70px]"
-          />
+  src="/HomePage/HQ-GLOW-RED.png"
+  alt="Background"
+  className="absolute w-3/4 h-3/4 object-contain mix-blend-screen opacity-90 z-30 translate-y-[-150px] sm:translate-y-[-100px]"
+/>
+
 
           {/* Front image */}
           <img

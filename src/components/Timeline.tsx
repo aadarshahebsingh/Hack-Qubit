@@ -25,7 +25,7 @@ const Timeline = () => {
       color: "text-primary",
       bgColor: "bg-primary/10",
       borderColor: "border-primary/30",
-      day: "Day 1 - September 7",
+      day: "Day 1 - October 7",
     },
     {
       time: "10:00 AM",
@@ -36,7 +36,7 @@ const Timeline = () => {
       color: "text-accent",
       bgColor: "bg-accent/10",
       borderColor: "border-accent/30",
-      day: "Day 1 - September 7",
+      day: "Day 1 - October 7",
     },
     {
       time: "11:00 AM",
@@ -47,7 +47,7 @@ const Timeline = () => {
       color: "text-neon-green",
       bgColor: "bg-neon-green/10",
       borderColor: "border-neon-green/30",
-      day: "Day 1 - September 7",
+      day: "Day 1 - October 7",
     },
     {
       time: "01:00 PM",
@@ -57,7 +57,7 @@ const Timeline = () => {
       color: "text-chrome",
       bgColor: "bg-chrome/10",
       borderColor: "border-chrome/30",
-      day: "Day 1 - September 7",
+      day: "Day 1 - October 7",
     },
     {
       time: "06:00 PM",
@@ -67,7 +67,7 @@ const Timeline = () => {
       color: "text-primary",
       bgColor: "bg-primary/10",
       borderColor: "border-primary/30",
-      day: "Day 1 - September 7",
+      day: "Day 1 - October 7",
     },
     {
       time: "08:00 PM",
@@ -77,7 +77,7 @@ const Timeline = () => {
       color: "text-accent",
       bgColor: "bg-accent/10",
       borderColor: "border-accent/30",
-      day: "Day 1 - September 7",
+      day: "Day 1 - October 7",
     },
     {
       time: "12:00 AM",
@@ -98,7 +98,7 @@ const Timeline = () => {
       color: "text-chrome",
       bgColor: "bg-chrome/10",
       borderColor: "border-chrome/30",
-      day: "Day 2 - September 8",
+      day: "Day 2 - October 8",
     },
     {
       time: "09:00 AM",
@@ -108,7 +108,7 @@ const Timeline = () => {
       color: "text-primary",
       bgColor: "bg-primary/10",
       borderColor: "border-primary/30",
-      day: "Day 2 - September 8",
+      day: "Day 2 - October 8",
     },
     {
       time: "09:30 AM",
@@ -118,7 +118,7 @@ const Timeline = () => {
       color: "text-accent",
       bgColor: "bg-accent/10",
       borderColor: "border-accent/30",
-      day: "Day 2 - September 8",
+      day: "Day 2 - October 8",
     },
     {
       time: "10:30 PM",
@@ -128,7 +128,7 @@ const Timeline = () => {
       color: "text-neon-green",
       bgColor: "bg-neon-green/10",
       borderColor: "border-neon-green/30",
-      day: "Day 2 - September 8",
+      day: "Day 2 - October 8",
     },
   ];
 
