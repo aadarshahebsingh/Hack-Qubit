@@ -144,7 +144,7 @@ const Footer = () => {
                   Organizer
                 </h5>
                 <p className="text-muted-foreground text- font-bold">
-                  Helix - Technical Club
+                  Helix - Tech & AI Club of RVSCET
                 </p>
               </div>
             </div>
