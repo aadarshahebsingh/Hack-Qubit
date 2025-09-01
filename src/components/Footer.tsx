@@ -76,7 +76,7 @@ const Footer = () => {
 
               {/* Logo 3 */}
               <img
-                src="/Navigation_Bar/rvsLogoHackQubitpng"
+                src="/Navigation_Bar/rvsLogoHackQubit.png"
                 alt="Logo 3"
                 className="w-10 h-25 object-contain rounded"
               />

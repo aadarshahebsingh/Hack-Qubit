@@ -225,7 +225,7 @@ const Navigation = () => {
             {/* Mobile Toggle */}
             <div className="flex items-center space-x-4">
               <img
-                src="/Navigation_Bar/rvsLogoHackQubitpng"
+                src="/Navigation_Bar/rvsLogoHackQubit.png"
                 alt="Logo 3"
                 className="h-20 w-auto"
               />
