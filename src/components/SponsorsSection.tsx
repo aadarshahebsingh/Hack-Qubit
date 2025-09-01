@@ -13,7 +13,7 @@ export const SponsorsSection = () => {
         "Print ads with title on banner and posters.",
         "Deliver a keynote address during the opening and closing ceremony",
       ],
-      investment: "From ₹70,000+",
+      investment: "From ₹30,000+",
       glowColor: "rgba(185, 242, 255, 0.7)",
       borderColor: "rgba(100, 200, 255, 0.8)",
       accentColor: "text-cyan-300",
@@ -35,7 +35,7 @@ export const SponsorsSection = () => {
     {
       tier: "Silver Sponsor",
       features: ["Logo placement", "Prize sponsorship", "Print ads on Posters"],
-      investment: "From ₹10,000+",
+      investment: "From ₹15,000+",
       glowColor: "rgba(192, 192, 192, 0.7)",
       borderColor: "rgba(200, 200, 220, 0.8)",
       accentColor: "text-gray-300",

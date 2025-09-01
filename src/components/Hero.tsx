@@ -36,11 +36,10 @@ const Hero = () => {
         <div className="w-screen h-screen relative z-50 flex items-center justify-center overflow-hidden">
           {/* Back image */}
           <img
-  src="/HomePage/HQ-GLOW-RED.png"
-  alt="Background"
-  className="absolute w-3/4 h-3/4 object-contain mix-blend-screen opacity-90 z-30 translate-y-[-150px] sm:translate-y-[-100px]"
-/>
-
+            src="/HomePage/HQ-GLOW-RED.png"
+            alt="Background"
+            className="absolute w-3/4 h-3/4 object-contain mix-blend-screen opacity-90 z-30 translate-y-[-150px] sm:translate-y-[-100px]"
+          />
 
           {/* Front image */}
           <img
@@ -62,17 +61,27 @@ const Hero = () => {
 
           {/* Buttons on top of the car */}
           <div className="absolute top-[65%] z-30 flex flex-col gap-4 items-center">
+            {/* Register Now Button */}
             <Button
               variant="racing"
               size="xl"
               className="min-w-48 animate-glow-pulse"
+              onClick={() =>
+                window.open(
+                  "https://forms.gle/YksA4s6DsmuZPyoZA",
+                  "_blank"
+                )
+              }
             >
               REGISTER NOW
             </Button>
+
+            {/* Learn More Button */}
             <Button
               variant="neon"
               size="xl"
               className="min-w-48 relative overflow-hidden font-bold text-lg text-white border-2 border-red-500 shadow-[0_0_10px_red] hover:scale-105 transition-transform"
+              onClick={() => window.open("https://drive.google.com/drive/u/6/folders/1Kwz39prsGDpX0IuUFrAB4lZvtV4Q7i3Y", "_blank")}
             >
               {/* Checkered background */}
               <span className="absolute inset-0 bg-[linear-gradient(45deg,#fff_25%,#000_25%,#000_50%,#fff_50%,#fff_75%,#000_75%,#000_100%)] bg-[length:20px_20px] opacity-60" />
