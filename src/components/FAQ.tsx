@@ -11,7 +11,7 @@ const FAQ = () => {
     {
       question: "What is HackQubit?",
       answer:
-        "24 hours. One hackathon. Code with purpose, create with passion, and conquer real-world challenges — that’s HackQubit.",
+        "24 hours. One hackathon. Code with purpose, create with passion, and conquer real-world challenges — that’s HackQubit",
     },
     {
       question: "Who can participate in HackQubit?",

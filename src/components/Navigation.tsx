@@ -145,7 +145,6 @@
 
 // export default Navigation;
 
-
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -156,9 +155,9 @@ const navItems = [
   { name: "ABOUT", href: "#about" },
   { name: "VENUE", href: "#venue" },
   { name: "PRIZES", href: "#prizes" },
-  {name: "SCHEDULE", href:"#timeline"},
+  { name: "SCHEDULE", href: "#timeline" },
   { name: "PROBLEMS", href: "#problems" },
-  {name:"EVENTS",href:"#events"},
+  { name: "EVENTS", href: "#events" },
   { name: "SPONSORS", href: "#sponsors" },
   { name: "FAQ", href: "#faq" },
 ];
@@ -226,7 +225,7 @@ const Navigation = () => {
             {/* Mobile Toggle */}
             <div className="flex items-center space-x-4">
               <img
-                src="/Navigation_Bar/rvsLogoHackQubit.png"
+                src="/Navigation_Bar/rvsLogoHackQubitpng"
                 alt="Logo 3"
                 className="h-20 w-auto"
               />

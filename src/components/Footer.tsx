@@ -4,7 +4,7 @@ import { Github, Mail, Twitter, Instagram, Linkedin } from "lucide-react";
 const Footer = () => {
   const socialLinks = [
     { icon: Github, href: "#", label: "GitHub" },
-    { icon: Mail, href: "hackQubit.rvscet@gmail.com", label: "Email" },
+    { icon: Mail, href: "HackQubitrvscet@gmail.com", label: "Email" },
     // { icon: Twitter, href: '#', label: 'Twitter' },
     {
       icon: Instagram,
@@ -76,7 +76,7 @@ const Footer = () => {
 
               {/* Logo 3 */}
               <img
-                src="/Navigation_Bar/rvsLogoHackQubit.png"
+                src="/Navigation_Bar/rvsLogoHackQubitpng"
                 alt="Logo 3"
                 className="w-10 h-25 object-contain rounded"
               />
@@ -210,7 +210,7 @@ const Footer = () => {
         >
           <div className="flex items-center space-x-8">
             <p className="text-muted-foreground text-base font-bold font-rajdhani">
-              © 2025 HackQubit. All rights reserved.
+              © 2025 HackQubit All rights reserved.
             </p>
             <div className="flex space-x-6 text-xs text-muted-foreground font-rajdhani">
               <a
